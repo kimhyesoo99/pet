@@ -5,6 +5,7 @@ const ActivityIntro = () => {
     return (
         <div className='activityIntroCont'>
             <h3>PawPrints 주요 활동</h3>
+            <p>따뜻한 가족을 찾아주는 입양, 자연 속 즐거운 산책 코스 추천, 그리고 강아지를 위한 필수 아이템 쇼핑까지 한곳에서 만나보세요!</p>
             <div className='ActivityWrapper'>
                 <div className='ActivityBox'>
                     <div className='Activityflex1'>

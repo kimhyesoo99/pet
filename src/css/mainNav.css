@@ -24,7 +24,8 @@
 
 .logoBox>h1 {
     font-size: 2rem;
-    color: #2C2226;
+    color: #dd952f;
+    ;
 }
 
 .menuBox {
@@ -62,4 +63,9 @@
     .logoBox>h1 {
         font-size: 28px;
     }
+}
+
+.menuBox>ul>li>a:hover {
+    color: #dd952f;
+    font-weight: bold;
 }

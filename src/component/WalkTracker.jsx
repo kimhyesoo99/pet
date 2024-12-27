@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import '../css/walkTracker.css';
-import {key} from '../api/Api.js'
+import { key } from '../api/Api.js'
 
 const containerStyle = {
     width: '85%',

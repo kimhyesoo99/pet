@@ -17,7 +17,7 @@
 }
 
 .walkTrackerheader {
-    font-size: 25px;
+    font-size: 20px;
     width: 100%;
     display: flex;
     margin-bottom: 3rem;
@@ -36,19 +36,19 @@
 
 .calculateRouteButton,
 .saveLogButton {
-    background-color: #ff4500;
+    background-color: #dd953f;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
     margin-top: 10px;
-    transition: background-color 0.3s ease;
 }
 
 .calculateRouteButton:hover,
 .saveLogButton:hover {
-    background-color: #e03e00;
+    background-color: #dd953f;
+    ;
 }
 
 .uploadSection {
@@ -57,4 +57,16 @@
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.uploadSection h3 {
+    margin-top: 1rem;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.uploadSection input {
+    display: flex;
+    margin-bottom: 1.5rem;
 }

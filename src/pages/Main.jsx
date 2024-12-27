@@ -8,6 +8,7 @@ import Products from '../component/Products'
 import AbandonedDogService from '../component/AbandonedDogService'
 import ActivityIntro from '../component/ActivityIntro'
 import AdoptionReview from '../component/AdoptionReview'
+import Footer from '../component/Footer'
 
 
 const Main = () => {
@@ -22,6 +23,7 @@ const Main = () => {
             <Products />
             <ActivityIntro />
             <AdoptionReview />
+            <Footer />
         </div>
     )
 }

@@ -9,9 +9,15 @@
 }
 
 .adoptionReviewCont>h3 {
-    font-size: 25px;
-    margin-bottom: 3rem;
+    font-size: 30px;
     margin-top: 9rem;
+    margin-bottom: 0.3rem;
+}
+
+.adoptionReviewCont>p {
+    font-size: 16px;
+    margin-bottom: 3rem;
+    color: gray;
 }
 
 .adoptionReviewWrapper {
@@ -41,7 +47,7 @@
 
 .reviews>h3 {
     font-size: 20px;
-    margin-top:1rem;
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
 
@@ -49,4 +55,3 @@
     font-size: 14px;
     color: gray;
 }
-
