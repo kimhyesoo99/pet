@@ -1,0 +1,116 @@
+.puppyCont {
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.puppyWrapper {
+    width: 80%;
+    height: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.puppyTextBox {
+    text-align: center;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+.puppyTextBox>h3 {
+    font-size: 25px;
+    margin-bottom: 0.5rem;
+}
+
+.puppyImgWrapper {
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.puppysbox {
+    background-color: white;
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.puppysbox img {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.puppysbox h4 {
+    font-size: 18px;
+    color: #333;
+}
+
+.puppysbox>button {
+    padding: 10px 40px;
+    color: #dd952f;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.puppysbox>button:hover {
+    background-color: #dd952f;
+    color: white;
+}
+
+/* 반응형 디자인: 작은 화면에서 카드가 세로로 배치되도록 */
+@media (max-width: 768px) {
+    .puppyImgWrapper {
+        flex-direction: column;
+        /* 카드 세로로 배치 */
+        gap: 15px;
+        /* 간격을 좀 더 좁힘 */
+    }
+
+    .puppysbox {
+        width: 80%;
+        /* 작은 화면에서 카드 크기를 줄임 */
+        height: auto;
+        /* 세로 크기 자동 조정 */
+    }
+}
+
+/* 더 작은 화면에서 카드가 완전히 세로로 배치되도록 */
+@media (max-width: 480px) {
+    .puppyImgWrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .puppysbox {
+        width: 100%;
+        /* 카드가 전체 너비를 차지하도록 설정 */
+        height: auto;
+    }
+
+    .puppyTextBox>h3 {
+        font-size: 20px;
+        /* 화면 크기에 맞춰 텍스트 크기 줄이기 */
+    }
+}
