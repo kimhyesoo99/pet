@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import '../css/walkTracker.css';
+import {key} from '../api/Api.js'
 
 const containerStyle = {
     width: '85%',
@@ -51,7 +52,7 @@ const WalkTracker = () => {
                 <div className='walkTrackerCourse'>
                     <div className='walkTrackerMap'>
                         {/* 지도 */}
-                        <LoadScript googleMapsApiKey="AIzaSyCA3_QHhX1Jij9SongK0mpsmmL-CK_kU3k">
+                        <LoadScript googleMapsApiKey={key}>
                             <GoogleMap
                                 mapContainerStyle={containerStyle}
                                 center={center} // 서울을 중심으로 설정

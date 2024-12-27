@@ -1,11 +1,17 @@
 import React from 'react'
+import '../css/adoptionReview.css'
 
 const AdoptionReview = () => {
-  return (
-    <div className='adoptionReviewCont'>
+    return (
+        <div className='adoptionReviewCont'>
 
-    </div>
-  )
+            <div className='adoptionReviewWrapper'>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default AdoptionReview
