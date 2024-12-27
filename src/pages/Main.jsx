@@ -9,6 +9,7 @@ import AbandonedDogService from '../component/AbandonedDogService'
 import ActivityIntro from '../component/ActivityIntro'
 import AdoptionReview from '../component/AdoptionReview'
 import Footer from '../component/Footer'
+import BackToTopButton from '../component/BackToTopButton'
 
 
 const Main = () => {
@@ -23,6 +24,7 @@ const Main = () => {
             <Products />
             <ActivityIntro />
             <AdoptionReview />
+            <BackToTopButton/>
             <Footer />
         </div>
     )
