@@ -34,7 +34,8 @@
     display: flex;
 }
 
-.calculateRouteButton, .saveLogButton {
+.calculateRouteButton,
+.saveLogButton {
     background-color: #ff4500;
     color: white;
     border: none;
@@ -45,7 +46,8 @@
     transition: background-color 0.3s ease;
 }
 
-.calculateRouteButton:hover, .saveLogButton:hover {
+.calculateRouteButton:hover,
+.saveLogButton:hover {
     background-color: #e03e00;
 }
 
