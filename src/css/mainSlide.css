@@ -28,9 +28,20 @@
     border: none;
     padding: 10px;
     cursor: pointer;
-    z-index: 10;
+    z-index: 0;
 }
 
 .slideCont>button:hover {
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 768px) {
+
+    .slideCont {
+        padding-top: 5rem;
+    }
+
+    .slideCont>button {
+        padding: 3px;
+    }
 }

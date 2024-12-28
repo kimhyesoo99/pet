@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../css/mainNav.css';
 import { Link } from 'react-router-dom';
 
 const MainNav = () => {
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
 
     return (
         <nav className='mainnav_cont'>
@@ -10,7 +16,13 @@ const MainNav = () => {
                 <div className='logoBox'>
                     <h1><Link to="/">PawPrints</Link></h1>
                 </div>
-                <div className='menuBox'>
+
+                <div className="menu-toggle" onClick={toggleMenu}>
+                    <span>☰</span>
+                </div>
+
+
+                <div className={`menuBox ${isMenuOpen ? 'active' : ''}`}>
                     <ul>
                         <li><a href="#promotio">홍보</a></li>
                         <li><Link to="/ListDog">입양</Link></li>

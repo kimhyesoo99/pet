@@ -1,6 +1,6 @@
 .siteItroCont {
     width: 100%;
-    height: 70vh;
+    min-height: 70vh;
     background-color: white;
     display: flex;
     align-items: center;
@@ -63,7 +63,8 @@
 
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+
     .siteItroWrapper {
         flex-direction: column;
         text-align: center;
@@ -73,6 +74,14 @@
     .siteItroTextbox {
         width: 100%;
         text-align: center;
+    }
+
+    .siteItroTextbox>h3 {
+        font-size: 25px;
+    }
+
+    .siteItroTextbox>p {
+        font-size: 14px;
     }
 
     .siteItroImgbox>img {

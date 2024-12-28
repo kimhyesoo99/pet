@@ -11,7 +11,7 @@ import ActivityIntro from "../component/ActivityIntro";
 import AdoptionReview from "../component/AdoptionReview";
 import Footer from "../component/Footer";
 import BackToTopButton from "../component/BackToTopButton";
-import ListDog from "../component/ListDog"; // 입양 컴포넌트 추가
+import ListDog from "../component/ListDog";
 
 const Main = () => {
     return (
