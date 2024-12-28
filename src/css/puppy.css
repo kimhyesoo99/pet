@@ -65,8 +65,6 @@
 
 .puppysbox>button {
     padding: 10px 40px;
-    color: #dd952f;
-    font-weight: bold;
     border: none;
     cursor: pointer;
     border-radius: 20px;
@@ -74,9 +72,17 @@
     transition: background-color 0.3s;
 }
 
+.puppysbox>button>a {
+    color: #dd952f;
+    font-weight: bold;
+}
+
+.puppysbox>button>a:hover {
+    color: white;
+}
+
 .puppysbox>button:hover {
     background-color: #dd952f;
-    color: white;
 }
 
 /* 반응형 디자인: 작은 화면에서 카드가 세로로 배치되도록 */

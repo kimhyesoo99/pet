@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/siteIntroduction.css';
+import { Link } from 'react-router-dom';
 
 export const SiteIntroduction = () => {
     return (
@@ -15,7 +16,7 @@ export const SiteIntroduction = () => {
                         우리는 반려동물에게 평생의 헌신과 사랑을 줄 수 있는 책임감 있는 가족을 기다리고 있습니다. <br />
                         함께하는 동안 반려동물과의 깊은 유대감은 여러분을 더 나은 사람으로 만들어 줄 것입니다.
                     </p>
-                    <button><a href="#">더보기</a></button>
+                    <button><Link to="/ListDog">더보기</Link></button>
                 </div>
             </div>
         </div>

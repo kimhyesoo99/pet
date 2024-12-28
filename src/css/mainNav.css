@@ -24,9 +24,13 @@
 
 .logoBox>h1 {
     font-size: 2rem;
-    color: #dd952f;
-    ;
 }
+
+.logoBox>h1>a {
+    color: #dd952f;
+}
+
+
 
 .menuBox {
     width: 50%;

@@ -63,6 +63,10 @@
     background-color: #DD952F;
 }
 
+.Activityflex1>div:nth-child(1):hover .ActivityTextBox>button>a {
+    color: #DD952F;
+}
+
 .Activityflex1>div:nth-child(1):hover .ActivityTextBox>button,
 .Activityflex1>div:nth-child(2):hover .ActivityTextBox>button,
 .Activityflex2:hover .ActivityTextBox>button {
@@ -129,6 +133,11 @@
     border-radius: 10px;
     background-color: #DD952F;
     margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.ActivityTextBox>button>a {
     color: white;
     font-weight: bold;
 }

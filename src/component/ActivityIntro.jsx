@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css/activityIntro.css';
+import { Link } from 'react-router-dom';
 
 const ActivityIntro = () => {
     return (
@@ -16,7 +17,7 @@ const ActivityIntro = () => {
                                 <p>따뜻한 마음으로 새로운 가족을 </p>
                                 <p>맞이할 준비가 되셨나요?</p>
                                 <p>지금 바로 가족이 되어주세요!</p>
-                                <button>입양 절차 알아보기</button>
+                                <button><Link to="/ListDog">보호동물 보기</Link></button>
                             </div>
                         </div>
                         <div>

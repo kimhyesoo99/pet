@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/puppy.css';
+import { Link } from 'react-router-dom';
 
 const Puppy = () => {
     const puppys = [
@@ -22,7 +23,7 @@ const Puppy = () => {
                         <div className="puppysbox" key={puppy.id}>
                             <img src={puppy.url} alt={puppy.name} />
                             <h4>{puppy.name}</h4>
-                            <button>{puppy.button}</button>
+                            <button><Link to="/ListDog">{puppy.button}</Link></button>
                         </div>
                     ))}
                 </div>
