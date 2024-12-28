@@ -61,6 +61,9 @@
     font-weight: bold;
 }
 
+.siteItroImgbox>img:hover {
+    transform: translateY(-5px);
+}
 
 
 @media screen and (max-width: 768px) {

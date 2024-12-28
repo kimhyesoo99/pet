@@ -9,24 +9,21 @@ const containerStyle = {
 };
 
 const center = {
-    lat: 37.5665, // 서울의 위도
-    lng: 126.9780, // 서울의 경도
+    lat: 37.5665,
+    lng: 126.9780,
 };
 
 const WalkTracker = () => {
-    const [path, setPath] = useState([]); // 산책 경로
-    const [photo, setPhoto] = useState(null); // 업로드된 사진
-    const [walkLog, setWalkLog] = useState(''); // 산책 일지
+    const [path, setPath] = useState([]);
+    const [photo, setPhoto] = useState(null);
+    const [walkLog, setWalkLog] = useState('');
     const mapRef = useRef(null);
 
-    // 산책 경로 저장하기
     const handleMapClick = (e) => {
-        // 기존 경로를 덮어쓰지 않고 새로운 경로를 추가
         const newPath = [...path, e.latLng];
         setPath(newPath);
     };
 
-    // 사진 업로드 핸들러
     const handlePhotoChange = (e) => {
         const file = e.target.files[0];
         if (file) {
@@ -38,7 +35,6 @@ const WalkTracker = () => {
         }
     };
 
-    // 산책 일지 핸들러
     const handleWalkLogChange = (e) => {
         setWalkLog(e.target.value);
     };
@@ -51,16 +47,14 @@ const WalkTracker = () => {
                 </div>
                 <div className='walkTrackerCourse'>
                     <div className='walkTrackerMap'>
-                        {/* 지도 */}
                         <LoadScript googleMapsApiKey={key}>
                             <GoogleMap
                                 mapContainerStyle={containerStyle}
-                                center={center} // 서울을 중심으로 설정
+                                center={center}
                                 zoom={14}
                                 onClick={handleMapClick}
                                 onLoad={(map) => (mapRef.current = map)}
                             >
-                                {/* 클릭한 지점에 마커만 표시 */}
                                 {path.map((position, index) => (
                                     <Marker key={index} position={position} />
                                 ))}
@@ -68,13 +62,11 @@ const WalkTracker = () => {
                         </LoadScript>
                     </div>
                     <div className="uploadSection">
-                        {/* 사진 업로드 */}
                         <div>
                             <h3>산책 사진 업로드</h3>
                             <input type="file" accept="image/*" onChange={handlePhotoChange} />
                             {photo && <img src={photo} alt="Uploaded walk photo" style={{ width: '200px', marginTop: '10px' }} />}
                         </div>
-                        {/* 산책 일지 작성 */}
                         <div>
                             <h3>산책 일지 작성</h3>
                             <textarea
@@ -85,7 +77,6 @@ const WalkTracker = () => {
                                 cols="50"
                             />
                         </div>
-                        {/* 일지와 사진 저장 버튼 */}
                         <button className="saveLogButton" onClick={() => alert('산책 코스가 저장되었습니다!')}>산책 기록 저장</button>
                     </div>
                 </div>

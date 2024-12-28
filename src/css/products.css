@@ -8,13 +8,13 @@
     position: relative;
 }
 
-.productsCont > h3 {
+.productsCont>h3 {
     font-size: 30px;
     margin: 30px;
 }
 
 .slideleftButton,
-.sliderigtButton{
+.sliderigtButton {
     background-color: #dd952f;
     color: white;
     border: none;
@@ -48,11 +48,11 @@
 }
 
 .productsWrapper::-webkit-scrollbar {
-    display: none; 
+    display: none;
 }
 
 .prdducts {
-    flex: 0 0 auto; 
+    flex: 0 0 auto;
     width: 300px;
     margin: 13px;
     height: 350px;
@@ -61,22 +61,26 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.prdducts > img {
+.prdducts>img {
     width: 100%;
     height: auto;
     border-radius: 20px 20px 0 0;
 }
 
-.prdducts > p {
+.prdducts>img:hover {
+    transform: scale(1.05)
+}
+
+.prdducts>p {
     margin-bottom: 10px;
     margin-top: 15px;
 }
 
-.prdducts > h5 {
+.prdducts>h5 {
     margin-bottom: 10px;
     font-size: 19px;
 }
 
-.prdducts > h2 {
+.prdducts>h2 {
     font-size: 17px;
 }

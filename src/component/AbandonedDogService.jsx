@@ -28,4 +28,4 @@ const AbandonedDogService = () => {
     )
 }
 
-export default AbandonedDogService
+export default AbandonedDogService;
