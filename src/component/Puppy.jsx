@@ -3,7 +3,7 @@ import '../css/puppy.css';
 import { Link } from 'react-router-dom';
 
 const Puppy = () => {
-    
+
     const puppys = [
         { id: 1, url: '/img/unsplash_uge9QXIreS4.png', name: '하늘이', button: '더보기' },
         { id: 2, url: '/img/unsplash_Qb7D1xw28Co.png', name: '오디', button: '더보기' },

@@ -1,5 +1,7 @@
 import React from 'react'
 import '../css/adoptionReview.css'
+import { AiOutlineComment } from 'react-icons/ai';
+import { FaHeart } from 'react-icons/fa';
 
 const AdoptionReview = () => {
 
@@ -65,14 +67,20 @@ const AdoptionReview = () => {
             <div className='adoptionReviewWrapper'>
                 {reviews.map((index) => (
                     <div className="reviews" key={index.id}>
-                        <img src={index.url} />
+                        <img src={index.url} alt="review" />
                         <h3>{index.title}</h3>
                         <p>{index.cont}</p>
+                        <div className='reviewIconbox'>
+                            <FaHeart className='icon' style={{ marginRight: '1rem' }} />
+                            <AiOutlineComment className='icon' />
+                        </div>
                     </div>
                 ))}
             </div>
+
         </div>
     )
 }
 
-export default AdoptionReview
+export default AdoptionReview;
+

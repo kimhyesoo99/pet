@@ -80,14 +80,30 @@
     }
 
     .siteItroTextbox>h3 {
-        font-size: 25px;
+        font-size: 24px;
     }
 
     .siteItroTextbox>p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .siteItroImgbox>img {
         max-width: 80%;
     }
+}
+
+@media screen and (max-width: 480px) {
+
+    .siteItroWrapper {
+        width: 100%;
+    }
+
+    .siteItroTextbox>h3 {
+        font-size: 21px;
+    }
+
+    .siteItroTextbox>p {
+        font-size: 12px;
+    }
+
 }

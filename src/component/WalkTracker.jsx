@@ -43,7 +43,7 @@ const WalkTracker = () => {
         <div className='walkTrackerCont'>
             <div className='walkTrackerWrapper'>
                 <div className='walkTrackerheader'>
-                    <h2>반려동물과 함께하는 서울 산책 코스</h2>
+                    <h3>반려동물과 함께하는 서울 산책 코스</h3>
                 </div>
                 <div className='walkTrackerCourse'>
                     <div className='walkTrackerMap'>

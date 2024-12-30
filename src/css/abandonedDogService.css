@@ -52,8 +52,34 @@
     margin-top: 0.5rem;
 }
 
+.puppyabandonedDogTextBox>button:hover {
+    background-color: white;
+    color: #dd952f;
+    border: 1px solid #dd952f;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .puppyVideobox {
+        width: 50%;
+    }
+
+    .puppyabandonedDogTextBox {
+        width: 45%;
+    }
+
+}
 
 @media screen and (max-width: 768px) {
+
+    .puppyabandonedDogTextBox>h3,
+    .puppyabandonedDogTextBox>h5 {
+        font-size: 24px;
+    }
+
+    .puppyabandonedDogTextBox>p {
+        font-size: 16px;
+    }
 
     .abandonedDogServiceCont {
         flex-direction: column;
@@ -70,5 +96,17 @@
         justify-content: center;
         width: 90%;
         margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .puppyabandonedDogTextBox>h3,
+    .puppyabandonedDogTextBox>h5 {
+        font-size: 20px;
+    }
+
+    .puppyabandonedDogTextBox>p {
+        font-size: 13px;
     }
 }

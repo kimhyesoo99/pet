@@ -84,3 +84,15 @@
 .prdducts>h2 {
     font-size: 17px;
 }
+
+@media screen and (max-width: 768px) {
+    .productsCont>h3 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .productsCont>h3 {
+        font-size: 23px;
+    }
+}

@@ -90,6 +90,20 @@
     transform: scale(1.05)
 }
 
+@media screen and (max-width: 1024px) {
+
+    .puppyWrapper {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        width: 100%;
+    }
+
+    .puppyImgWrapper {
+        width: 70%;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
 
     .puppyTextBox {
@@ -101,10 +115,21 @@
     }
 
     .puppyTextBox>p {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .puppysbox {
         margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .puppyTextBox>h3 {
+        font-size: 20px;
+    }
+
+    .puppyTextBox>p {
+        font-size: 13px;
     }
 }
