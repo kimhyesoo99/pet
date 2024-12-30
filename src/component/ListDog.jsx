@@ -11,7 +11,7 @@ const ListDogs = () => {
 
     useEffect(() => {
         const fetchAnimalPhotos = async () => {
-            const url = `https://openapi.seoul.go.kr:8088/${apiKey}/xml/TbAdpWaitAnimalPhotoView/1/300/`;
+            const url = `http://openapi.seoul.go.kr:8088/${apiKey}/xml/TbAdpWaitAnimalPhotoView/1/300/`;
             try {
                 const response = await axios.get(url);
                 const xmlText = response.data;
