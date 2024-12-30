@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { listDogs } from '../api/Api.js';
 import '../css/listDogs.css';
 import axios from 'axios';
 import BackToTopButton from './BackToTopButton.jsx';
+
+const apiKey = process.env.REACT_APP_DOG_LIST_API_KEY
 
 const ListDogs = () => {
 
@@ -10,7 +11,7 @@ const ListDogs = () => {
 
     useEffect(() => {
         const fetchAnimalPhotos = async () => {
-            const url = `http://openapi.seoul.go.kr:8088/${listDogs}/xml/TbAdpWaitAnimalPhotoView/1/300/`;
+            const url = `http://openapi.seoul.go.kr:8088/${apiKey}/xml/TbAdpWaitAnimalPhotoView/1/300/`;
             try {
                 const response = await axios.get(url);
                 const xmlText = response.data;

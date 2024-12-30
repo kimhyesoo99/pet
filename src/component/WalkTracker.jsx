@@ -1,7 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import '../css/walkTracker.css';
-import { key } from '../api/Api.js'
+
+const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
 const containerStyle = {
     width: '85%',
@@ -14,6 +15,7 @@ const center = {
 };
 
 const WalkTracker = () => {
+
     const [path, setPath] = useState([]);
     const [photo, setPhoto] = useState(null);
     const [walkLog, setWalkLog] = useState('');
@@ -47,7 +49,7 @@ const WalkTracker = () => {
                 </div>
                 <div className='walkTrackerCourse'>
                     <div className='walkTrackerMap'>
-                        <LoadScript googleMapsApiKey={key}>
+                        <LoadScript googleMapsApiKey={apiKey}>
                             <GoogleMap
                                 mapContainerStyle={containerStyle}
                                 center={center}
