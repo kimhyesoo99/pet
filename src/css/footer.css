@@ -38,3 +38,14 @@
     color: black;
     font-weight: bold;
 }
+
+@media screen and (max-width: 480px) {
+
+    .footerLogoBox>h2 {
+        font-size: 25px;
+    }
+    
+    .footerMenu>ul>li>a {
+        font-size: 15px;
+    }
+}
