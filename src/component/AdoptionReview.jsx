@@ -62,7 +62,7 @@ const AdoptionReview = () => {
             <h3>PawPrints 입양후기</h3>
             <p>
                 PawPrints를 통해 새로운 가족을 맞이한 따뜻한 이야기들을 만나보세요. <br />
-                반려동물과 함께한 특별한 순간들이 입양자들의 삶에 어떤 변화를 가져왔는지, 사랑과 행복이 가득한 후기를 지금 확인해보세요! 🐾
+                사랑과 행복이 가득한 후기를 확인해보세요! 🐾
             </p>
             <div className='adoptionReviewWrapper'>
                 {reviews.map((index) => (

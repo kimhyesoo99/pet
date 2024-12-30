@@ -143,8 +143,8 @@
         margin-bottom: 1.5rem;
     }
 
-    .walkTrackerheader>h2 {
-        font-size: 1.2rem;
+    .walkTrackerheader>h3 {
+        font-size: 1.3rem;
     }
 
     .walkTrackerMap {
@@ -155,7 +155,16 @@
         padding: 1rem;
     }
 
-    .uploadSection>h3 {
+    .uploadSection h3 {
         font-size: 1.1rem;
+    }
+
+    .uploadSection textarea {
+        width: 95%;
+    }
+
+    .uploadSection button {
+        width: 50%;
+        margin-bottom: 1rem;
     }
 }
