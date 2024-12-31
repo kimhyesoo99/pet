@@ -12,7 +12,7 @@ const ListDogs = () => {
         const fetchAnimalPhotos = async () => {
             const listDogs = process.env.REACT_APP_DOG_LIST_API_KEY;
             const proxyUrl = 'https://paw-prints-ten.vercel.app/api/proxy';
-            const url = `${proxyUrl}?url=http://openapi.seoul.go.kr:8088/76685a67416b737931303352774c6f6f/xml/TbAdpWaitAnimalPhotoView/1/300/`;
+            const url = `${proxyUrl}?url=http://openapi.seoul.go.kr:8088/${listDogs}/xml/TbAdpWaitAnimalPhotoView/1/300/`;
             console.log(url)
             console.log(listDogs)
             try {
