@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 const Puppy = () => {
 
     const puppys = [
-        { id: 1, url: '/img/unsplash_uge9QXIreS4.png', name: '하늘이', button: '더보기' },
-        { id: 2, url: '/img/unsplash_Qb7D1xw28Co.png', name: '오디', button: '더보기' },
-        { id: 3, url: '/img/unsplash_HlOLcjp4AEM.png', name: '미니', button: '더보기' },
-        { id: 4, url: '/img/unsplash_9M0tSjb-cpA.png', name: '콩순이', button: '더보기' },
+        { id: 1, url: '/img/puppy_haneul-i.png', name: '하늘이', button: '더보기' },
+        { id: 2, url: '/img/puppy_odi.png', name: '오디', button: '더보기' },
+        { id: 3, url: '/img/puppy_mini.png', name: '미니', button: '더보기' },
+        { id: 4, url: '/img/puppy_kongsun-i.png', name: '콩순이', button: '더보기' },
     ];
 
     return (

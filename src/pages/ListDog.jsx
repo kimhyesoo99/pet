@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../css/listDogs.css';
 import axios from 'axios';
 import BackToTopButton from '../component/BackToTopButton.jsx';
+import Footer from '../component/Footer.jsx';
 
 
 const ListDogs = () => {
@@ -10,7 +11,6 @@ const ListDogs = () => {
 
     useEffect(() => {
         const fetchAnimalPhotos = async () => {
-            
             const listDogs = process.env.REACT_APP_DOG_LIST_API_KEY;
             const proxyUrl = 'https://paw-prints-ten.vercel.app/api/proxy';
             const url = `${proxyUrl}?url=http://openapi.seoul.go.kr:8088/${listDogs}/xml/TbAdpWaitAnimalPhotoView/1/300/`;
@@ -46,27 +46,29 @@ const ListDogs = () => {
 
 
     return (
-        <div className='listDogcont'>
-            <BackToTopButton />
-            <div className='listDogHead'>
-                <h3>보호동물</h3>
+        <>
+            <div className='listDogcont'>
+                <BackToTopButton />
+                <div className='listDogHead'>
+                    <h3>보호동물</h3>
+                </div>
+                <div className='listDogWrapper'>
+                    {animalPhotos.map((animal, index) => (
+                        <div key={index}>
+                            {animal.photoUrl ? (
+                                <img src={animal.photoUrl} alt={`동물 번호 ${animal.animalNo}`} width="300" height="250" />
+                            ) : (
+                                <p>사진 없음</p>
+                            )}
+                            <h3>동물 번호 : <span>{animal.animalNo}</span></h3>
+                            <p>자세한 정보는 아래 버튼을 누른 후 확인 부탁드립니다</p>
+                            <button><a href="https://animal.seoul.go.kr/index">더보기</a></button>
+                        </div>
+                    ))}
+                </div>
             </div>
-            <div className='listDogWrapper'>
-                {animalPhotos.map((animal, index) => (
-                    <div key={index}>
-                        {animal.photoUrl ? (
-                            <img src={animal.photoUrl} alt={`동물 번호 ${animal.animalNo}`} width="300" height="250" />
-                        ) : (
-                            <p>사진 없음</p>
-                        )}
-                        <h3>동물 번호 : <span>{animal.animalNo}</span></h3>
-                        <p>자세한 정보는 아래 버튼을 누른 후 확인 부탁드립니다</p>
-                        <h5><a href="https://animal.seoul.go.kr/index">더보기</a></h5>
-                    </div>
-                ))}
-            </div>
-        </div>
-
+            <Footer />
+        </>
     );
 };
 

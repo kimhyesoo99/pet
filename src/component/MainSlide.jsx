@@ -5,8 +5,8 @@ const MainSlide = () => {
 
 
     const slides = [
-        { id: 1, url: '/img/Group 59.png', alt: 'Slide 1' },
-        { id: 2, url: '/img/Group 60.png', alt: 'Slide 2' },
+        { id: 1, imgurl: '/img/main_banner_img.png', alt: 'Slide 1' },
+        { id: 2, imgurl: '/img/main_banner_img.png2', alt: 'Slide 2' },
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,7 +32,7 @@ const MainSlide = () => {
             >
                 {slides.map((slide) => (
                     <div className="slide" key={slide.id}>
-                        <img src={slide.url} alt={slide.alt} />
+                        <img src={slide.imgurl} alt={slide.alt} />
                     </div>
                 ))}
             </div>

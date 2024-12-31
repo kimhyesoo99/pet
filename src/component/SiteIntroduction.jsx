@@ -7,7 +7,7 @@ export const SiteIntroduction = () => {
         <div className='siteItroCont'>
             <div className='siteItroWrapper'>
                 <div className='siteItroImgbox'>
-                    <img src="/img/unsplash_fliwkBbS7oM.png" alt="유기견 이미지" />
+                    <img src="/img/siteintro_img.png" alt="siteintro_이미지" />
                 </div>
                 <div className='siteItroTextbox'>
                     <h3>책임감 있는 반려동물 가족을 찾습니다</h3>
