@@ -14,6 +14,7 @@ const ListDogs = () => {
             const proxyUrl = 'https://paw-prints-ten.vercel.app/api/proxy'; // Proxy URL
             const url = `${proxyUrl}?url=http://openapi.seoul.go.kr:8088/${listDogs}/xml/TbAdpWaitAnimalPhotoView/1/300/`;
             console.log(url)
+            console.log(listDogs)
 
             try {
                 const response = await axios.get(url);
