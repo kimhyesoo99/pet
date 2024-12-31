@@ -135,6 +135,10 @@
 
 @media screen and (max-width: 480px) {
 
+    .productsWrapper {
+        width: 95%;
+    }
+
     .productsCont>h3 {
         font-size: 23px;
     }
