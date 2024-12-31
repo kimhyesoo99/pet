@@ -12,6 +12,12 @@ const MainNav = () => {
 
     return (
         <nav className='mainnav_cont'>
+            <div className='subNavBox'>
+                <ul>
+                    <li><Link to="/Login">로그인</Link></li>
+                    <li><Link to="/SignUp">회원가입</Link></li>
+                </ul>
+            </div>
             <div className='mainnavBox'>
                 <div className='logoBox'>
                     <h1><Link to="/">PawPrints</Link></h1>

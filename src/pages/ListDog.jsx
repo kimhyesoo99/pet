@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../css/listDogs.css';
 import axios from 'axios';
-import BackToTopButton from './BackToTopButton.jsx';
+import BackToTopButton from '../component/BackToTopButton.jsx';
 
 const apiKey = process.env.REACT_APP_DOG_LIST_API_KEY
 

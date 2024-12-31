@@ -19,11 +19,11 @@ const Products = () => {
 
 
     const slideLeft = () => {
-        productsWrapperRef.current.scrollBy({ left: -300, behavior: 'smooth' });
+        productsWrapperRef.current.scrollBy({ left: -370, behavior: 'smooth' });
     };
 
     const slideRight = () => {
-        productsWrapperRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+        productsWrapperRef.current.scrollBy({ left: 370, behavior: 'smooth' });
     };
 
     const filteredProducts = filter

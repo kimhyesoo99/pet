@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../css/productsList.css';
-import BackToTopButton from './BackToTopButton';
-import Footer from './Footer';
+import BackToTopButton from '../component/BackToTopButton';
+import Footer from '../component/Footer';
 
 const ProductsList = () => {
 

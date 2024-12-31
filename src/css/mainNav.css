@@ -1,15 +1,38 @@
 .mainnav_cont {
     width: 100%;
-    height: 6rem;
+    height: 8rem;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     position: fixed;
     top: 0;
     z-index: 10;
     background-color: white;
 }
 
+.subNavBox {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+}
+
+.subNavBox>ul {
+    display: flex;
+}
+
+.subNavBox>ul>li {
+    margin-right: 1rem;
+}
+
+.subNavBox>ul>li>a {
+    color: black;
+    font-size: 14px;
+}
+
+
 .mainnavBox {
+    margin: 0 auto;
     width: 90%;
     height: 100%;
     display: flex;
@@ -163,4 +186,15 @@
     .logoBox>h1 {
         font-size: 1.5rem;
     }
+
+    .subNavBox {
+        position: absolute;
+        right: 3rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .subNavBox>ul>li>a {
+        font-size: 14px;
+    }
+
 }
