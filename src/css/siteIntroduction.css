@@ -49,11 +49,24 @@
 }
 
 .siteItroTextbox>button {
-    padding: 10px 30px;
+    background-color: #dd953f;
+    color: white;
     border: none;
-    border-radius: 10px;
-    background-color: #DD952F;
-    margin-top: 10px;
+    padding: 15px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.siteItroTextbox>button:hover {
+    background-color: white;
+    border: 1px solid #dd953f;
+}
+
+.siteItroTextbox>button:hover>a {
+    color: #dd953f;
 }
 
 .siteItroTextbox>button>a {

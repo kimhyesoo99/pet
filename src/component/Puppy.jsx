@@ -16,8 +16,8 @@ const Puppy = () => {
             <div className='puppyWrapper'>
                 <div className='puppyTextBox'>
                     <h3>새로운 가족을 만나다</h3>
-                    <p>
-                        입양을 통해 귀여운 강아지들에게 새로운 시작을 선물하고, 특별한 인연을 만들어보세요.</p>
+                    <p>입양을 통해 귀여운 강아지들에게 새로운 시작을 선물하고,</p>
+                    <p>특별한 인연을 만들어보세요.</p>
                 </div>
                 <div className='puppyImgWrapper'>
                     {puppys.map((puppy) => (

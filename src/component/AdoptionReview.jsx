@@ -60,8 +60,7 @@ const AdoptionReview = () => {
     return (
         <div className='adoptionReviewCont'>
             <h3>PawPrints 입양후기</h3>
-            <p>
-                PawPrints를 통해 새로운 가족을 맞이한 따뜻한 이야기들을 만나보세요. <br />
+            <p>새로운 가족을 맞이한 따뜻한 이야기들을 만나보세요. <br />
                 사랑과 행복이 가득한 후기를 확인해보세요! 🐾
             </p>
             <div className='adoptionReviewWrapper'>
@@ -71,7 +70,7 @@ const AdoptionReview = () => {
                         <h3>{index.title}</h3>
                         <p>{index.cont}</p>
                         <div className='reviewIconbox'>
-                            <FaHeart className='icon' style={{ marginRight: '1rem' }} />
+                            <FaHeart className='icon' style={{ marginRight: '2rem' }} />
                             <AiOutlineComment className='icon' />
                         </div>
                     </div>

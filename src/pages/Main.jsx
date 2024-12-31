@@ -12,6 +12,7 @@ import AdoptionReview from "../component/AdoptionReview";
 import Footer from "../component/Footer";
 import BackToTopButton from "../component/BackToTopButton";
 import ListDog from "../component/ListDog";
+import ProductsList from "../component/ProductsList";
 
 const Main = () => {
     return (
@@ -33,6 +34,7 @@ const Main = () => {
                     </>
                 } />
                 <Route path="/ListDog" element={<ListDog />} />
+                <Route path="/ProductsList" element={<ProductsList />} />
             </Routes>
         </Router>
     );

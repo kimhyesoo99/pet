@@ -123,12 +123,15 @@
 }
 
 .ActivityTextBox>button {
-    padding: 10px 20px;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    background-color: #DD952F;
-    margin-top: 10px;
+    background-color: #dd953f;
     color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
 }
 
 .ActivityTextBox>button>a {

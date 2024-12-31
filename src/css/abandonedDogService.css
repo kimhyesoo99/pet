@@ -34,6 +34,7 @@
 .puppyabandonedDogTextBox>p {
     font-size: 15px;
     margin-bottom: 0.2rem;
+    text-align: left;
 }
 
 .puppyabandonedDogTextBox>h5 {
@@ -43,13 +44,15 @@
 }
 
 .puppyabandonedDogTextBox>button {
-    background-color: #dd952f;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
+    background-color: #dd953f;
     color: white;
-    font-weight: bold;
-    margin-top: 0.5rem;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
 }
 
 .puppyabandonedDogTextBox>button:hover {
@@ -108,5 +111,6 @@
 
     .puppyabandonedDogTextBox>p {
         font-size: 13px;
+        text-align: center;
     }
 }
