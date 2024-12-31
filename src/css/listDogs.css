@@ -12,8 +12,10 @@
 
 .listDogHead {
     width: 80%;
-    margin-bottom: 4rem;
-    border-bottom: 1px solid gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -21,6 +23,31 @@
     font-size: 30px;
     margin: 30px;
 }
+
+.filter-buttons {
+    width: 90%;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid gainsboro;
+}
+
+.filter-buttons>button {
+    padding: 15px 35px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 30px;
+    margin: 0.5rem;
+    color: #dd952f;
+    margin-bottom: 3rem;
+}
+
+.filter-buttons>button:hover {
+    background-color: #dd952f;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+
 
 
 .listDogWrapper {
@@ -48,7 +75,7 @@
 }
 
 .listDogWrapper>div>h3 {
-    font-size: 21px;
+    font-size: 18px;
     margin-bottom: 0.5rem;
 }
 
@@ -63,7 +90,7 @@
 }
 
 .listDogWrapper>div>button {
-    padding:10px 20px;
+    padding: 10px 20px;
     border: none;
     border-radius: 10px;
     background-color: #DD952F;

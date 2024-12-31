@@ -114,6 +114,11 @@
 @media screen and (max-width: 480px) {
 
     .loginWrapper {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .loginWrapper {
         width: 100%;
     }
 
