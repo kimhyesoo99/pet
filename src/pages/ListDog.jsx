@@ -10,9 +10,10 @@ const ListDogs = () => {
 
     useEffect(() => {
         const fetchAnimalPhotos = async () => {
-            const listDogs = process.env.REACT_APP_LIST_DOGS; // Fetch environment variable
+            const listDogs = process.env.REACT_APP_DOG_LIST_API_KEY; // Fetch environment variable
             const proxyUrl = 'https://paw-prints-ten.vercel.app/api/proxy'; // Proxy URL
             const url = `${proxyUrl}?url=http://openapi.seoul.go.kr:8088/${listDogs}/xml/TbAdpWaitAnimalPhotoView/1/300/`;
+            console.log(url)
 
             try {
                 const response = await axios.get(url);
