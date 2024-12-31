@@ -6,7 +6,7 @@ const MainSlide = () => {
 
     const slides = [
         { id: 1, imgurl: '/img/main_banner_img.png', alt: 'Slide 1' },
-        { id: 2, imgurl: '/img/main_banner_img.png2', alt: 'Slide 2' },
+        { id: 2, imgurl: '/img/main_banner_img2.png', alt: 'Slide 2' },
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
