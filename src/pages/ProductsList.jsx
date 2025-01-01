@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../css/productsList.css';
 import BackToTopButton from '../component/BackToTopButton';
 import Footer from '../component/Footer';
+import { Link } from 'react-router-dom';
 
 const ProductsList = () => {
 
@@ -65,7 +66,14 @@ const ProductsList = () => {
                                 <p>{item.price}</p>
                             </div>
                             <p>{item.cont}</p>
-                            <button>{item.category}</button>
+                            <div>
+                                <button>{item.category}</button>
+                                <Link to={"/ProductDetail"}>
+                                    <button className='Show_more_button'>
+                                        상세보기
+                                    </button>
+                                </Link>
+                            </div>
                         </div>
                     ))}
                 </div>

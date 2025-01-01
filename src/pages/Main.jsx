@@ -15,6 +15,8 @@ import ListDog from "../pages/ListDog";
 import ProductsList from "../pages/ProductsList";
 import Login from "./Login";
 import SignUp from "./SignUp";
+import DogDetail from "../component/DogDetail";
+import ProductDetail from "../component/ProductDetail";
 
 const Main = () => {
 
@@ -44,7 +46,9 @@ const Main = () => {
                     }
                 />
                 <Route path="/ListDog" element={<ListDog />} />
+                <Route path="/ListDog/:animalNo" element={<DogDetail />} />
                 <Route path="/ProductsList" element={<ProductsList />} />
+                <Route path="/ProductDetail" element={<ProductDetail />} />
                 <Route path="/Login" element={<Login />} />
                 <Route path="/SignUp" element={<SignUp />} />
             </Routes>

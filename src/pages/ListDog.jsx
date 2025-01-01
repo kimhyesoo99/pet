@@ -3,6 +3,7 @@ import '../css/listDogs.css';
 import axios from 'axios';
 import BackToTopButton from '../component/BackToTopButton.jsx';
 import Footer from '../component/Footer.jsx';
+import { Link } from 'react-router-dom';
 
 const ListDogs = () => {
 
@@ -63,8 +64,6 @@ const ListDogs = () => {
                 const uniqueAnimals = Array.from(new Set(mergedData.map((animal) => animal.animalNo)))
                     .map((animalNo) => mergedData.find((animal) => animal.animalNo === animalNo));
 
-                console.log("Merged Data with Photos and Details:", uniqueAnimals);
-
                 setAnimalPhotos(uniqueAnimals);
                 setFilteredData(uniqueAnimals);
 
@@ -108,7 +107,9 @@ const ListDogs = () => {
                             )}
                             <h3>이름: <span>{animal.name}</span></h3>
                             <p>성별: <span>{animal.sex}</span></p>
-                            <button><a href="https://animal.seoul.go.kr/index" target="_blank" rel="noopener noreferrer">더보기</a></button>
+                            <Link to={`/ListDog/${animal.animalNo}`}>
+                                <button>상세보기</button>
+                            </Link>
                         </div>
                     ))}
                 </div>

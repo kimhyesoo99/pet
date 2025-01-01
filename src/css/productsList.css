@@ -27,6 +27,8 @@
     border: 1px solid gainsboro;
     border-radius: 30px;
     margin: 0.5rem;
+    font-size: 16px;
+    font-weight: bold;
     color: #dd952f;
     margin-bottom: 3rem;
 }
@@ -85,7 +87,7 @@
     margin-bottom: 0.8rem;
 }
 
-.productsListCard>button {
+.productsListCard>div>button {
     padding: 5px 25px;
     background-color: #dd952f;
     color: #ffffff;
@@ -96,15 +98,362 @@
     align-items: center;
 }
 
+.productsListCard>div>a>button {
+    padding: 5px 25px;
+    background-color: #ff9500;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* 여기까지 상품 리스트 페이지  */
+
+.productDetailCont {
+    width: 100vw;
+    min-height: 73vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+.productDetailImgBox {
+    width: 50%;
+}
+
+.productDetailImgBox img {
+    width: 100%;
+    height: auto;
+}
+
+.productDetailTextBox {
+    width: 40%;
+    text-align: left;
+}
+
+.productDetailTextBox h3 {
+    font-size: 27px;
+}
+
+.productDetailTextBox>p {
+    color: gray;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.pricebox {
+    display: flex;
+    align-items: flex-end;
+}
+
+.pricebox>p {
+    margin-left: 0.2rem;
+    color: gray;
+}
+
+.quantitySelector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid #ff9500;
+    margin-top: 1rem;
+}
+
+.quantityButton {
+    border: none;
+    width: 30px;
+    border-radius: 10px;
+    height: 30px;
+    font-size: 17px;
+    background: white;
+}
+
+.quantityDisplay {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+.addToCartBut {
+    width: 70%;
+    height: 50px;
+    background-color: #ff9500;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+.cartBut {
+    width: 70%;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #ff9500;
+    color: #ff9500;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+.addToCartBut:hover {
+    background-color: white;
+    color: #ff9500;
+    border: 1px solid #ff9500;
+}
+
+.cartBut:hover {
+    background-color: #ff9500;
+    color: white;
+}
+
+
+.productDetailModalCont {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.productDetailModalBox {
+    width: 40%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productDetailModalwrapper {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.productDetailModalHead {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 1rem;
+}
+
+.productDetailModalBody {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    overflow: scroll;
+    margin-bottom: 1rem;
+}
+
+.productDetailModalFooter {
+    width: 100%;
+    border-top: 1px solid gainsboro;
+    margin-bottom: 1rem;
+}
+
+.productDetailModalFooter>div {
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.productDetailModalFooter>div>h3 {
+    font-size: 20px;
+}
+
+.productDetailModalHead h3 {
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+
+.productDetailModalBody>div {
+    display: flex;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.productDetails {
+    display: flex;
+    align-items: center;
+}
+
+.productDetails>div:nth-child(1)>img {
+    width: 80%;
+    height: auto;
+    margin-right: 2rem;
+}
+
+.productDetails>div:nth-child(2)>h3 {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+
+.productDetails>div:nth-child(2)>h5 {
+    font-size: 17px;
+    margin-bottom: 0.5rem;
+}
+
+.modlaQuantitySelector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25px;
+    border: 1px solid #c9c9c9;
+    margin-top: 1rem;
+}
+
+.modalQuantityButton {
+    border: none;
+    font-size: 13px;
+    background: white;
+    width: 20px;
+    height: 20px;
+}
+
+.modalQuantityDisplay {
+    font-size: 13px;
+}
+
+/* 여기까지는 상품 디테일 페이지 */
+
+@media screen and (max-width: 768px) {
+    .filterListButtons>button {
+        margin-bottom: 15px;
+    }
+
+    .productDetailTextBox {
+        width: 45%;
+    }
+
+    .productDetailTextBox h3 {
+        font-size: 20px;
+    }
+
+    .productDetailTextBox>p {
+        font-size: 14px;
+    }
+
+    .pricebox>p {
+        font-size: 14px;
+    }
+
+    .quantitySelector {
+        width: 25%;
+    }
+
+    .addToCartBut,
+    .cartBut {
+        width: 90%;
+        height: 40px;
+    }
+
+    .productDetailModalBox {
+        width: 80%;
+    }
+}
+
 
 @media screen and (max-width: 480px) {
 
-    .productsListWrapper{
+    .productsListWrapper {
         width: 94%;
+        align-items: center;
+    }
+
+    .filterListButtons {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+        gap: 10px;
+    }
+
+    .filterListButtons>button {
+        flex-shrink: 0;
+    }
+
+    .productDetailCont {
+        flex-direction: column;
+        margin-top: 4rem;
+        justify-content: space-around;
+    }
+
+    .productDetailImgBox {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .productDetailTextBox {
+        width: 90%;
+    }
+
+    .productDetailTextBox>p {
+        font-size: 15px;
     }
 
 
-    .productsListWrapper {
+    .addToCartBut,
+    .cartBut {
+        width: 100%;
+        height: 50px;
+        display: flex;
         align-items: center;
+        justify-content: center;
+    }
+
+    .productDetailModalBox {
+        width: 80%;
+    }
+
+    .productDetails>div:nth-child(1) {
+        width: 30%;
+    }
+
+    .productDetails>div:nth-child(2) {
+        width: 70%;
+    }
+
+    .productDetails>div:nth-child(1)>img {
+        width: 60%;
+        height: auto;
+    }
+
+    .productDetails>div:nth-child(2)>h3 {
+        font-size: 16px;
+    }
+
+    .productDetails>div:nth-child(2)>h5 {
+        font-size: 14px;
     }
 }
