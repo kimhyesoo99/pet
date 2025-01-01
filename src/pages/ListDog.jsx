@@ -90,7 +90,6 @@ const ListDogs = () => {
             <div className='listDogcont'>
                 <BackToTopButton />
                 <div className='listDogHead'>
-                    <h3>보호동물</h3>
                     <div className="filter-buttons">
                         <button onClick={() => filterByGender("전체")}>전체</button>
                         <button onClick={() => filterByGender("암컷")}>여자</button>

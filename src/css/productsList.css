@@ -10,6 +10,17 @@
     margin-top: 8rem;
 }
 
+.subMenu {
+    width: 90%;
+    display: flex;
+}
+
+.subMenu>ul {
+    display: flex;
+}
+
+
+
 .productsListCont>h3 {
     font-size: 30px;
     margin: 30px;
@@ -113,13 +124,20 @@
 /* 여기까지 상품 리스트 페이지  */
 
 .productDetailCont {
-    width: 100vw;
-    min-height: 73vh;
+    width: 80%;
+    flex-direction: column;
+    margin: 0 auto;
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+
+.productDetailCont>div:nth-child(2) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 6rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .productDetailImgBox {
@@ -132,17 +150,21 @@
 }
 
 .productDetailTextBox {
-    width: 40%;
+    width: 45%;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .productDetailTextBox h3 {
-    font-size: 27px;
+    font-size: 1.5rem;
 }
 
 .productDetailTextBox>p {
     color: gray;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
     margin-bottom: 2rem;
 }
 
@@ -164,8 +186,7 @@
     justify-content: center;
     width: 20%;
     height: 35px;
-    border-radius: 10px;
-    border: 1px solid #ff9500;
+    border: 1px solid gainsboro;
     margin-top: 1rem;
 }
 
@@ -176,21 +197,30 @@
     height: 30px;
     font-size: 17px;
     background: white;
+    color: gray;
 }
 
 .quantityDisplay {
-    font-size: 17px;
+    color: gray;
+    font-size: 0.6rem;
     font-weight: bold;
 }
 
+.productDetailButBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 
-.addToCartBut {
-    width: 70%;
-    height: 50px;
-    background-color: #ff9500;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
+
+.addToCartBut,
+.cartBut {
+    width: 47%;
+    height: 45px;
+    background-color: white;
+    color: #ff9500;
+    border: 1px solid #ff9500;
+    border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,31 +229,11 @@
     font-weight: bold;
 }
 
-.cartBut {
-    width: 70%;
-    height: 50px;
-    background-color: white;
-    border: 1px solid #ff9500;
-    color: #ff9500;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0.3rem;
-    font-weight: bold;
-}
-
-.addToCartBut:hover {
-    background-color: white;
-    color: #ff9500;
-    border: 1px solid #ff9500;
-}
-
+.addToCartBut:hover,
 .cartBut:hover {
     background-color: #ff9500;
     color: white;
 }
-
 
 .productDetailModalCont {
     width: 100vw;
@@ -347,9 +357,36 @@
 
 /* 여기까지는 상품 디테일 페이지 */
 
+@media screen and (max-width: 1024px) {
+
+    .subMenu {
+        width: 100%;
+    }
+
+
+}
+
 @media screen and (max-width: 768px) {
+
+    .subMenu {
+        width: 100%;
+    }
+
+    .productsListWrapper {
+        width: 100%;
+    }
+
     .filterListButtons>button {
         margin-bottom: 15px;
+    }
+
+    .productDetailCont {
+        width: 100%;
+    }
+
+    .productDetailImgBox {
+        display: flex;
+        align-items: center;
     }
 
     .productDetailTextBox {
@@ -357,29 +394,47 @@
     }
 
     .productDetailTextBox h3 {
-        font-size: 20px;
+        font-size: 1.2rem;
     }
 
     .productDetailTextBox>p {
-        font-size: 14px;
+        font-size: 0.8rem;
+        margin: 0.5rem 0px;
     }
 
     .pricebox>p {
-        font-size: 14px;
+        font-size: 0.8rem;
     }
 
     .quantitySelector {
         width: 25%;
+        height: 30px;
+        margin: 0.5rem 0px;
+    }
+
+    .quantityButton {
+        width: 28px;
+        height: 28px;
     }
 
     .addToCartBut,
     .cartBut {
         width: 90%;
-        height: 40px;
+        height: 35px;
     }
 
     .productDetailModalBox {
         width: 80%;
+    }
+
+    .productDetailButBox {
+        flex-direction: column;
+    }
+
+    .addToCartBut,
+    .cartBut {
+        margin: 0.6rem 0px;
+        border-radius: 0;
     }
 }
 
@@ -403,10 +458,10 @@
         flex-shrink: 0;
     }
 
-    .productDetailCont {
+    .productDetailCont>div:nth-child(2) {
         flex-direction: column;
-        margin-top: 4rem;
         justify-content: space-around;
+        align-items: center;
     }
 
     .productDetailImgBox {
@@ -420,6 +475,10 @@
 
     .productDetailTextBox>p {
         font-size: 15px;
+    }
+
+    .productDetailTextBox {
+        width: 90%;
     }
 
 

@@ -36,7 +36,7 @@ const ActivityIntro = () => {
                             <h5>강아지를 위한 필수 아이템</h5>
                             <p>강아지와 함께하는 생활을 더욱 편리하고 행복하게 만들어줄 상품들을 만나보세요.</p>
                             <p>지금 필요한 모든 것을 한눈에 확인할 수 있습니다!</p>
-                            <button><Link to="/">강아지 용품 쇼핑하기</Link></button>
+                            <button><Link to="/ProductsList">강아지 용품 쇼핑하기</Link></button>
                         </div>
                     </div>
                 </div>

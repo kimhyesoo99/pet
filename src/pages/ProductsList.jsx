@@ -45,8 +45,15 @@ const ProductsList = () => {
     return (
         <>
             <div className='productsListCont'>
+                <div className='subMenu'>
+                    <ul>
+                        <li><Link to={"/"} style={{ color: 'black', marginRight: '0.5rem' }}>HOME</Link></li>
+                        <li><p style={{ color: 'black', marginRight: '0.5rem' }}>&gt;</p></li>
+                        <li><Link to={"/"} style={{ color: '#dd952f' }}>SHOP</Link></li>
+                    </ul>
+                </div>
                 <BackToTopButton />
-                <h3>Prdducts</h3>
+                {/* <h3>Prdducts</h3> */}
                 <div className="filterListButtons">
                     {categories.map((category) => (
                         <button
