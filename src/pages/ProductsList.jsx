@@ -49,7 +49,7 @@ const ProductsList = () => {
                     <ul>
                         <li><Link to={"/"} style={{ color: 'black', marginRight: '0.5rem' }}>HOME</Link></li>
                         <li><p style={{ color: 'black', marginRight: '0.5rem' }}>&gt;</p></li>
-                        <li><Link to={"/"} style={{ color: '#dd952f' }}>SHOP</Link></li>
+                        <li><Link to={"/ProductsList"} style={{ color: '#dd952f' }}>SHOP</Link></li>
                     </ul>
                 </div>
                 <BackToTopButton />

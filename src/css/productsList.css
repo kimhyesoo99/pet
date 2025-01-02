@@ -19,8 +19,6 @@
     display: flex;
 }
 
-
-
 .productsListCont>h3 {
     font-size: 30px;
     margin: 30px;
@@ -127,7 +125,7 @@
     width: 80%;
     flex-direction: column;
     margin: 0 auto;
-    /* min-height: 100vh; */
+    min-height: 73vh;
     display: flex;
     align-items: center;
     margin-top: 8rem;
@@ -186,7 +184,7 @@
     justify-content: center;
     width: 20%;
     height: 35px;
-    border: 1px solid gainsboro;
+    border: 1px solid grey;
     margin-top: 1rem;
 }
 
@@ -216,7 +214,7 @@
 .addToCartBut,
 .cartBut {
     width: 47%;
-    height: 45px;
+    height: 50px;
     background-color: white;
     color: #ff9500;
     border: 1px solid #ff9500;

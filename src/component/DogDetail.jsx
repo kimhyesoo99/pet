@@ -1,4 +1,4 @@
-import { useLocation, useParams } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import '../css/listDogs.css';
 import BackToTopButton from './BackToTopButton';
 import Footer from './Footer';
@@ -23,20 +23,64 @@ const DogDetail = () => {
     return (
         <>
             <BackToTopButton />
-            <div>
-                <h2>동물 상세 정보</h2>
-                <img src={animal.photoUrl} alt={animal.name} />
-                <h3>이름: {animal.name}</h3>
-                <p>성별: {animal.sex}</p>
-                <p>입소일: {animal.entranceDate}</p>
-                <p>품종: {animal.breed}</p>
-                <p>나이: {animal.age}</p>
-                <p>몸무게: {animal.weight}</p>
-                <p>입양 상태: {animal.adoptionStatus}</p>
-                <p>임시보호: {animal.temporaryParticipationStatus}</p>
-                <p>상호작용 내용: {interactionContent}</p>
-                <p>임시참여 내용: {temporaryParticipationContent}</p>
-                <video src={animal.interactionMoveUrl}></video>
+            <div className='dogDetailPageCont'>
+                <div className='subMenu'>
+                    <ul>
+                        <li><Link to={"/"} style={{ color: 'black', marginRight: '0.5rem' }}>HOME</Link></li>
+                        <li><p style={{ color: 'black', marginRight: '0.5rem' }}>&gt;</p></li>
+                        <li><Link to={"/ListDog"} style={{ color: 'black', marginRight: '0.5rem' }}>DOG</Link></li>
+                        <li><p style={{ color: 'black', marginRight: '0.5rem' }}>&gt;</p></li>
+                        <li><Link to={"/ProductDetail"} style={{ color: '#dd952f' }}>INTRODUCTION</Link></li>
+                    </ul>
+                </div>
+                <div className='dogDetailPageWrappr'>
+                    <div className='dogDetailPageAbotMe'>
+                        <div className='dogDetailInro'>
+                            <div>
+                                <p>안녕 나는 <span>{animal.name}</span></p>
+                                <p>나의 가족이 되어주라 🐾</p>
+                            </div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div className='dogDetailImgBox'>
+                            <img src={animal.photoUrl} alt="공공데이터 보호동물 이미지" />
+                        </div>
+                        <div className='dogDetailTextBox'>
+                            <div>
+                                <h5>성별</h5>
+                                <p>{animal.sex}</p>
+                            </div>
+                            <div>
+                                <h5>나이</h5>
+                                <p>{animal.age}</p>
+                            </div>
+                            <div>
+                                <h5>몸무게</h5>
+                                <p>{animal.weigh}</p>
+                            </div>
+                            <div>
+                                <h5>품종</h5>
+                                <p>{animal.breed}</p>
+                            </div>
+                            <div>
+                                <h5>입소일</h5>
+                                <p>{animal.entranceDate}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='dogDetailPageIntroduction'>
+                        <div>
+                            <h5>저를 소개합니다!🐾</h5>
+                        </div>
+                        <div>
+                            <p>{interactionContent}</p>
+                        </div>
+                    </div>
+                    <div className='dogDetailPageButton'>
+                        <button>입양문의</button>
+                    </div>
+                </div>
             </div>
             <Footer />
         </>

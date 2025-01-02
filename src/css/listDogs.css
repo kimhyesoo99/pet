@@ -98,6 +98,252 @@
     font-weight: bold;
 }
 
+/* 여기까지는 보호동물 리스트 */
+
+.dogDetailPageCont {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 2rem;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.subMenu {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+}
+
+.subMenu>ul {
+    display: flex;
+}
+
+
+.dogDetailPageWrappr {
+    width: 90%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.dogDetailPageAbotMe {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2rem;
+    justify-content: space-around;
+}
+
+.dogDetailInro {
+    position: relative;
+    left: 9rem;
+    top: -4rem;
+}
+
+.dogDetailInro>div:nth-child(1) {
+    padding: 10px;
+    width: 100%;
+    height: 9rem;
+    background-color: #f4e5d0;
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dogDetailInro>div:nth-child(2) {
+    position: relative;
+    left: 4rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f4e5d0;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.dogDetailInro>div:nth-child(3) {
+    position: relative;
+    left: 6rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #f4e5d0;
+}
+
+.dogDetailInro>div:nth-child(1) span {
+    font-size: 1.1rem;
+    color: #dd952f;
+    font-weight: bold;
+}
+
+
+.dogDetailInro>div:nth-child(1) p {
+    font-size: 1rem;
+}
+
+.dogDetailImgBox {
+    width: 40;
+    height: 30%;
+    border-radius: 90px;
+    overflow: hidden;
+}
+
+.dogDetailImgBox>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dogDetailTextBox {
+    width: 20%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dogDetailTextBox h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    color: #DD952F;
+}
+
+.dogDetailTextBox p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.dogDetailPageIntroduction {
+    width: 70%;
+    height: 90%;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.dogDetailPageIntroduction>div:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    background-color: #f4e5d0;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+
+.dogDetailPageIntroduction h5 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.dogDetailPageIntroduction p {
+    line-height: 1.8;
+}
+
+.dogDetailPageButton {
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.dogDetailPageButton button {
+    background-color: #dd953f;
+    color: white;
+    border: none;
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.dogDetailPageButton button:hover {
+    color: #DD952F;
+    background-color: white;
+    border: 1px solid #DD952F;
+}
+
+
+
+/* 여기까지는 보호동물 상세정보 페이지 */
+
+@media screen and (max-width: 1024px) {
+
+    .subMenu {
+        margin-bottom: 4rem;
+    }
+
+    .dogDetailInro {
+        left: 3rem;
+    }
+
+    .dogDetailTextBox {
+        margin-left: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .dogDetailPageWrappr {
+        width: 100%;
+    }
+
+    .dogDetailInro>div:nth-child(1) {
+        padding: 10px;
+        height: 7rem;
+    }
+
+
+    .dogDetailInro>div:nth-child(2) {
+        width: 35px;
+        height: 35px;
+    }
+
+    .dogDetailInro>div:nth-child(3) {
+        width: 25px;
+        height: 25px;
+    }
+
+    .dogDetailInro>div:nth-child(1) span {
+        font-size: 0.9rem;
+    }
+
+
+    .dogDetailInro>div:nth-child(1) p {
+        font-size: 0.8rem;
+    }
+
+    .dogDetailTextBox h5 {
+        font-size: 0.9rem;
+    }
+
+    .dogDetailTextBox p {
+        font-size: 0.8rem;
+    }
+
+    .dogDetailPageIntroduction {
+        width: 90%;
+        margin-top: 3rem;
+    }
+
+    .dogDetailPageButton button {
+        width: 80%;
+    }
+}
+
 
 @media screen and (max-width: 480px) {
 
@@ -111,5 +357,40 @@
 
     .filter-buttons>button {
         flex-shrink: 0;
+    }
+
+    .subMenu {
+        margin-bottom: 0;
+    }
+
+    .dogDetailPageWrappr {
+        width: 100%;
+    }
+
+    .dogDetailPageAbotMe {
+        flex-direction: column;
+    }
+
+    .dogDetailImgBox {
+        border-radius: 0;
+    }
+
+    .dogDetailInro {
+        top: 2rem;
+        left: 0;
+    }
+
+    .dogDetailInro>div:nth-child(1) {
+        width: 100%;
+    }
+
+    .dogDetailTextBox {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 1rem;
     }
 }
