@@ -55,10 +55,10 @@ const DogDetail = () => {
                                 <h5>나이</h5>
                                 <p>{animal.age}</p>
                             </div>
-                            <div>
+                            {/* <div>
                                 <h5>몸무게</h5>
                                 <p>{animal.weigh}</p>
-                            </div>
+                            </div> */}
                             <div>
                                 <h5>품종</h5>
                                 <p>{animal.breed}</p>

@@ -297,6 +297,10 @@
 
 @media screen and (max-width: 768px) {
 
+    .dogDetailInro {
+        left: 0;
+    }
+
     .dogDetailPageWrappr {
         width: 100%;
     }
@@ -304,6 +308,7 @@
     .dogDetailInro>div:nth-child(1) {
         padding: 10px;
         height: 7rem;
+        width: 200px;
     }
 
 
@@ -342,6 +347,10 @@
     .dogDetailPageButton button {
         width: 80%;
     }
+
+    .dogDetailImgBox {
+        width: 80%;
+    }
 }
 
 
@@ -373,7 +382,9 @@
 
     .dogDetailImgBox {
         border-radius: 0;
+        width: 100%;
     }
+
 
     .dogDetailInro {
         top: 2rem;
@@ -392,5 +403,9 @@
         text-align: center;
         margin: 0 auto;
         margin-top: 1rem;
+    }
+
+    .dogDetailPageIntroduction>div:nth-child(2) {
+        padding: 20px;
     }
 }
