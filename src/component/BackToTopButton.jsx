@@ -7,7 +7,7 @@ const BackToTopButton = () => {
     };
 
     return (
-        <div style={{ position: 'fixed', bottom: '20px', right: '20px' }}>
+        <div style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: 20 }}>
             <button className='topbut'
                 style={{ width: '75px', height: '75px', borderRadius: '50%', border: 'none', marginBottom: '1rem' }}
                 onClick={scrollToTop}
