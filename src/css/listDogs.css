@@ -113,7 +113,7 @@
     margin-top: 3rem;
 }
 
-.subMenu {
+.dogDetailPageSubMenu {
     width: 90%;
     height: 20%;
     display: flex;
@@ -121,7 +121,7 @@
     margin-top: 6rem;
 }
 
-.subMenu>ul {
+.dogDetailPageSubMenu>ul {
     display: flex;
 }
 
@@ -152,7 +152,7 @@
 
 .dogDetailInro>div:nth-child(1) {
     padding: 10px;
-    width: 100%;
+    width: 300px;
     height: 9rem;
     background-color: #f4e5d0;
     border-radius: 70px;
@@ -194,7 +194,7 @@
 }
 
 .dogDetailImgBox {
-    width: 40;
+    width: 40%;
     height: 30%;
     border-radius: 90px;
     overflow: hidden;
@@ -359,7 +359,7 @@
         flex-shrink: 0;
     }
 
-    .subMenu {
+    .dogDetailPageSubMenu {
         margin-bottom: 0;
     }
 

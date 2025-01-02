@@ -100,6 +100,13 @@ const ListDogs = () => {
     return (
         <div className='listDogcont'>
             <BackToTopButton />
+            <div className='subMenu'>
+                <ul>
+                    <li><Link to={"/"} style={{ color: 'black', marginRight: '0.5rem' }}>HOME</Link></li>
+                    <li><p style={{ color: 'black', marginRight: '0.5rem' }}>&gt;</p></li>
+                    <li><Link to={"/ListDog"} style={{ color: '#dd952f', }}>DOG</Link></li>
+                </ul>
+            </div>
             <div className='listDogHead'>
                 <div className="filter-buttons">
                     <button onClick={() => filterByGender("전체")}>전체</button>

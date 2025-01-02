@@ -24,7 +24,7 @@ const DogDetail = () => {
         <>
             <BackToTopButton />
             <div className='dogDetailPageCont'>
-                <div className='subMenu'>
+                <div className='dogDetailPageSubMenu'>
                     <ul>
                         <li><Link to={"/"} style={{ color: 'black', marginRight: '0.5rem' }}>HOME</Link></li>
                         <li><p style={{ color: 'black', marginRight: '0.5rem' }}>&gt;</p></li>
