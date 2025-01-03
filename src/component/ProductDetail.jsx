@@ -59,6 +59,7 @@ const ProductDetail = () => {
                         <img src="/img/product_detail_image.png" alt="디테일 이미지" />
                     </div>
                     <div className='productDetailTextBox'>
+                        <h5>PawPrints products</h5>
                         <h3>저칼로리 건강 간식</h3>
                         <p>건강과 맛을 모두 챙긴 저칼로리 간식! 바쁜 일상 속에서도 <br />
                             가볍고 맛있게 즐길 수 있는 완벽한 선택입니다. <br />
@@ -84,8 +85,6 @@ const ProductDetail = () => {
                             <button className='addToCartBut' onClick={handleAddToCart}>구매하기</button>
                             <button className='cartBut' onClick={modalOpen}>장바구니</button>
                         </div>
-
-
 
                         {modal && (
                             <div className='productDetailModalCont'>

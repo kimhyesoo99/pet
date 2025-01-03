@@ -41,6 +41,7 @@ const ProductsList = () => {
         : product;
 
     const categories = ['전체', ...new Set(product.map((item) => item.category))];
+    
 
     return (
         <>
@@ -87,7 +88,6 @@ const ProductsList = () => {
             </div>
             <Footer />
         </>
-
     );
 };
 

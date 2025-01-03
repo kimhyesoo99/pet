@@ -12,6 +12,7 @@ const ListDogs = () => {
     const [genderFilter, setGenderFilter] = useState("전체");
 
     useEffect(() => {
+        
         const fetchAnimalPhotos = async () => {
             const listDogs = process.env.REACT_APP_DOG_LIST_API_KEY;
             const listcontDogs = process.env.REACT_APP_DOG_LIST_CONT_API_KEY;
@@ -98,43 +99,45 @@ const ListDogs = () => {
     };
 
     return (
-        <div className='listDogcont'>
-            <BackToTopButton />
-            <div className='subMenu'>
-                <ul>
-                    <li><Link to={"/"} style={{ color: 'black', marginRight: '0.5rem' }}>HOME</Link></li>
-                    <li><p style={{ color: 'black', marginRight: '0.5rem' }}>&gt;</p></li>
-                    <li><Link to={"/ListDog"} style={{ color: '#dd952f', }}>DOG</Link></li>
-                </ul>
-            </div>
-            <div className='listDogHead'>
-                <div className="filter-buttons">
-                    <button onClick={() => filterByGender("전체")}>전체</button>
-                    <button onClick={() => filterByGender("암컷")}>여자</button>
-                    <button onClick={() => filterByGender("수컷")}>남자</button>
+        <>
+            <div className='listDogcont'>
+                <BackToTopButton />
+                <div className='subMenu'>
+                    <ul>
+                        <li><Link to={"/"} style={{ color: 'black', marginRight: '0.5rem' }}>HOME</Link></li>
+                        <li><p style={{ color: 'black', marginRight: '0.5rem' }}>&gt;</p></li>
+                        <li><Link to={"/ListDog"} style={{ color: '#dd952f', }}>DOG</Link></li>
+                    </ul>
+                </div>
+                <div className='listDogHead'>
+                    <div className="filter-buttons">
+                        <button onClick={() => filterByGender("전체")}>전체</button>
+                        <button onClick={() => filterByGender("암컷")}>여자</button>
+                        <button onClick={() => filterByGender("수컷")}>남자</button>
+                    </div>
+                </div>
+                <div className='listDogWrapper'>
+                    {filteredData.map((animal) => (
+                        <div key={animal.animalNo}>
+                            {animal.photoUrl ? (
+                                <img src={animal.photoUrl} alt={`동물 번호 ${animal.animalNo}`} width="300" height="250" />
+                            ) : (
+                                <p>사진 없음</p>
+                            )}
+                            <h3>이름: <span>{animal.name}</span></h3>
+                            <p>성별: <span>{animal.sex}</span></p>
+                            <Link
+                                to={`/ListDog/${animal.animalNo}`}
+                                state={{ animalPhotos }}
+                            >
+                                <button>상세보기</button>
+                            </Link>
+                        </div>
+                    ))}
                 </div>
             </div>
-            <div className='listDogWrapper'>
-                {filteredData.map((animal) => (
-                    <div key={animal.animalNo}>
-                        {animal.photoUrl ? (
-                            <img src={animal.photoUrl} alt={`동물 번호 ${animal.animalNo}`} width="300" height="250" />
-                        ) : (
-                            <p>사진 없음</p>
-                        )}
-                        <h3>이름: <span>{animal.name}</span></h3>
-                        <p>성별: <span>{animal.sex}</span></p>
-                        <Link
-                            to={`/ListDog/${animal.animalNo}`}
-                            state={{ animalPhotos }}
-                        >
-                            <button>상세보기</button>
-                        </Link>
-                    </div>
-                ))}
-            </div>
             <Footer />
-        </div>
+        </>
     );
 };
 

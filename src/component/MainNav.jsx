@@ -27,8 +27,8 @@ const MainNav = () => {
                 </div>
                 <div className={`menuBox ${isMenuOpen ? 'active' : ''}`}>
                     <ul>
-                        <li><Link to="/promotio">홍보</Link></li>
                         <li><Link to="/ListDog">입양</Link></li>
+                        <li><Link to="/promotio">봉사</Link></li>
                         <li><Link to="/walking">산책</Link></li>
                         <li><Link to="/ProductsList">상품</Link></li>
                         <li><Link to="/community">커뮤니티</Link></li>

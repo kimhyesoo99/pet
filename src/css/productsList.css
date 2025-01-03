@@ -155,6 +155,11 @@
     justify-content: center;
 }
 
+.productDetailTextBox h5 {
+    color: grey;
+    margin-bottom: 0.rem;
+}
+
 .productDetailTextBox h3 {
     font-size: 1.5rem;
 }
