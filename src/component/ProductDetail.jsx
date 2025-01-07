@@ -65,12 +65,10 @@ const ProductDetail = () => {
                             가볍고 맛있게 즐길 수 있는 완벽한 선택입니다. <br />
                             이 간식은 낮은 칼로리와 풍부한 영양소를 자랑하며,<br />
                             체중 관리를 고민하는 분들에게 적합합니다.</p>
-
                         <div className='pricebox'>
                             <h3>{quantity * unitPrice}원</h3>
                             <p>(100g 기준)</p>
                         </div>
-
                         <div className="quantitySelector">
                             <button className="quantityButton" onClick={decreaseQuantity}>
                                 -

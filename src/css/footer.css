@@ -41,11 +41,15 @@
 
 @media screen and (max-width: 480px) {
 
+    .footerMenu {
+        width: 80%;
+    }
+
     .footerLogoBox>h2 {
         font-size: 25px;
     }
 
     .footerMenu>ul>li>a {
-        font-size: 13px;
+        font-size: 11px;
     }
 }

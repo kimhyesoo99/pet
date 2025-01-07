@@ -19,6 +19,15 @@
     height: auto;
 }
 
+.slide-background {
+    display: none;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    /* background-image: url("/public/img/main_banner_img_small1.png"); */
+}
+
 .slideCont>button {
     position: absolute;
     top: 50%;
@@ -44,4 +53,16 @@
     .slideCont>button {
         padding: 3px;
     }
+}
+
+
+@media screen and (max-width: 480px) {
+    .slide img {
+        display: none;
+    }
+
+    .slide-background {
+        display: block;
+    }
+
 }
