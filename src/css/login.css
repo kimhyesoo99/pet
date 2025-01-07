@@ -9,7 +9,7 @@
 .loginWrapper {
     align-items: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: relative;
     width: 90vw;
     height: 80vh;
@@ -28,12 +28,14 @@
 
 
 .loginImgBox {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 50%;
 }
+
+.loginImgBox>img {
+    width: 50%;
+    height: auto;
+}
+
 
 .loginTextBox {
     display: flex;
@@ -110,7 +112,15 @@
     }
 
     .loginTextBox {
-        width: 50%;
+        width: 60%;
+        height: 80vh;
+    }
+
+
+    .loginWrapper {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
     }
 
 }
