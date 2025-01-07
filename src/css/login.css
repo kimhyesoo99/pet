@@ -92,12 +92,19 @@
 
     .loginImgBox {
         width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .loginImgBox>img {
-        width: 45%;
-        height: auto;
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
     }
+
 
     .loginTextBox {
         width: 40%;
