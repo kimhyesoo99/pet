@@ -17,7 +17,7 @@ const Login = () => {
         <div className='loginCont'>
             <div className='loginWrapper'>
                 <div className='loginImgBox'>
-                    <img style={{ position: 'absolute', left: '4rem', top: '20%' }} src="/img/Doggie.png" alt="" />
+                    <img src="/img/Doggie.png" alt="" />
                 </div>
                 <div className='loginTextBox'>
                     <Link to={"/"}>

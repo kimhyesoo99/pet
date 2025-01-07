@@ -17,7 +17,7 @@ const SignUp = () => {
         <div className='signUpCont'>
             <div className='signUpWrapper'>
                 <div className='signUpImgBox'>
-                    <img style={{ position: 'absolute', left: '4rem', top: '20%' }} src="/img/Doggie.png" alt="" />
+                    <img src="/img/Doggie.png" alt="회원가입 이미지" />
                 </div>
                 <div className='signUpTextBox'>
                     <Link to={"/"}>
